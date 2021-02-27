@@ -1,13 +1,77 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.header-container,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.column {
+  padding-right: 0.4em !important;
+  padding-left: 0.4em !important;
+  padding-bottom: 0.8em !important;
+  height: 300px !important;
+}
+
+.list-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.list-group-item {
+  padding: 0 !important;
+  height: 30px;
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+
+.list-item {
+  display: flex !important;
+  /* justify-content: space-around !important; */
+}
+
+.list-item .hour {
+  padding-left: px;
+}
+
+.list-item .item-name {
+  padding-left: 15px;
+}
+
+.list-item .cost {
+  position: absolute;
+  right: 0px;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.total {
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
 }
